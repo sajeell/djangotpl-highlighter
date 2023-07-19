@@ -1,6 +1,6 @@
 # Django Template Highlighting
 
-Syntax highlighting for jinja(2) including HTML, Markdown, YAML and other templates.
+Syntax highlighting for HTML, and TPL files in Django projects.
 
 ## Languages:
 

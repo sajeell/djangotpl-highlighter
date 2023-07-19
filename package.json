@@ -1,0 +1,87 @@
+{
+  "name": "djangotpl-highlighter",
+  "displayName": "DjangoTPL Highlighter",
+  "description": "Syntax highlighting for Django templates",
+  "version": "1.0.0",
+  "publisher": "SajeelAhmad",
+  "author": "Sajeel Ahmad",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "tpl",
+    "django",
+    "template",
+    "html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sajeell/djangotpl-highlighter.git"
+  },
+  "main": "./src/extension.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "lint": "prettier --check '**/*.{js,json,md}'"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "printWidth": 119,
+    "bracketSpacing": false,
+    "arrowParens": "avoid"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  },
+  "activationEvents": [
+    "onLanguage:jinja-html"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jinja-html",
+        "aliases": [
+          "Django HTML",
+          "jinja-html"
+        ],
+        "extensions": [
+          ".html",
+          ".tpl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "htmlLanguageParticipants": [
+      {
+        "languageId": "jinja-html",
+        "autoInsert": true
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jinja-html",
+        "scopeName": "text.html.jinja",
+        "path": "./syntaxes/jinja-html.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "jinja-html",
+        "scopeName": "text.html.jinja",
+        "path": "./snippets/django-snippets.json"
+      }
+    ],
+    "breakpoints": [
+      {
+        "language": "jinja-html"
+      }
+    ]
+  }
+}

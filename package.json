@@ -2,7 +2,7 @@
   "name": "djangotpl-highlighter",
   "displayName": "DjangoTPL Highlighter",
   "description": "Syntax highlighting for Django templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "SajeelAhmad",
   "author": "Sajeel Ahmad",
   "engines": {

@@ -28,6 +28,10 @@
     "format": "prettier --write '**/*.{js,json,md}'",
     "lint": "prettier --check '**/*.{js,json,md}'"
   },
+  "fileIcons": {
+    ".html": "icons/html-icon.svg",
+    ".tpl": "icons/html-icon.svg"
+  },
   "prettier": {
     "singleQuote": true,
     "semi": false,
